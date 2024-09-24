@@ -21,6 +21,13 @@
 
         gtag("config", "AW-16674432877");
     </script>
+    <script>
+        gtag("event", "conversion", {
+            send_to: "AW-16674432877/XG3fCKCV2tEZEO3O_o4-",
+            value: 1.0,
+            currency: "INR",
+        });
+    </script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10941642875"></script>
@@ -34,14 +41,26 @@
 
         gtag('config', 'AW-10941642875');
     </script>
-
     <script>
-        gtag("event", "conversion", {
-            send_to: "AW-16674432877/XG3fCKCV2tEZEO3O_o4-",
-            value: 1.0,
-            currency: "INR",
+        gtag('event', 'conversion', {
+            'send_to': 'AW-10941642875/UFQ4CJ_W-NIZEPvwsOEo'
         });
     </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BP9BF6M5VM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-BP9BF6M5VM');
+    </script>
+
+    <!-- Google Tag Manager -->
     <script>
         (function(w, d, s, l, i) {
             w[l] = w[l] || [];
