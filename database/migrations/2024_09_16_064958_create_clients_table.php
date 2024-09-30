@@ -11,15 +11,17 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('clients', function (Blueprint $table) {
-            $table->uuid("client_id");
-            $table->string("name");
-            $table->string("email");
-            $table->string("phone");
-            $table->string("state");
-            $table->string("message");
-            $table->timestamps();
-        });
+        if (!Schema::hasTable('clients')) {
+            Schema::create('clients', function (Blueprint $table) {
+                $table->uuid("client_id");
+                $table->string("name");
+                $table->string("email");
+                $table->string("phone");
+                $table->string("state");
+                $table->string("message");
+                $table->timestamps();
+            });
+        }
     }
 
     /**

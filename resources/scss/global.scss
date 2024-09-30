@@ -35,13 +35,16 @@ footer ul > li > a {
     color: inherit;
 }
 
-form.animate {
-    translate: 100% 0%;
+.hidden {
+    --translate-y: 20%;
+    --transition-delay: 0.5s;
     opacity: 0;
-    transition: translate 1s ease, opacity 1s ease;
+    translate: 0 var(--translate-y, 20%);
+    transition: all 1s ease;
+    transition-delay: var(--transition-delay, 0.5s);
 }
 
-form.show {
-    translate: 0 0;
+.show {
+    --translate-y: 0%;
     opacity: 1;
 }

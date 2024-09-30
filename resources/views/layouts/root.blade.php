@@ -4,10 +4,12 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Legal Success India</title>
     <link rel="shortcut icon" href="/images/logo.png" type="image/png" />
+    @yield('head')
     <!-- Custom styles -->
-    @vite(['resources/scss/app.scss', 'resources/js/app.js'])
+    @vite(['resources/scss/app.scss', 'resources/ts/app.ts'])
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16674432877"></script>
@@ -107,8 +109,8 @@
         </div>
     </div>
     @yield('script')
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9WWSRQG" height="0" width="0"
-            style="display: none; visibility: hidden"></iframe></noscript>
+    {{-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9WWSRQG" height="0" width="0"
+            style="display: none; visibility: hidden"></iframe></noscript> --}}
 </body>
 
 </html>
